@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Pro</title>
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: 'flat-jooza';
+            overflow-x: hidden;
+            font-size: 15px;
+            margin: 0 auto;
+        }
+        .continer {
+            background: #fff;
+            width: calc(100% - 50px);
+            margin: 20px auto;
+            padding: 15px;
+            max-width: 900px;
+            box-shadow: 0 2px 2px rgb(0 21 64 / 10%), 0 10px 10px rgb(0 21 64 / 5%);
+            border-radius: 5px;
+        }
+        .continer h2 {
+            margin: 0 auto 15px;
+            padding: 10px 15px;
+            color: #fff;
+            font-size: 16px;
+            background: #6935fd;
+            border-radius: 5px;
+        }
+        svg{width:22px;height:22px;vertical-align:middle;fill:#161617}
+        .form-group:first-of-type{margin-bottom:20px}
+        .form-group{position:relative}
+        .form-group input.inputt{display:block;margin:5px auto;width:100%;text-align:right;height:50px;font-size:14px;-webkit-transition:all .6s ease;-o-transition:all .6s ease;transition:all .6s ease;border:1px solid #eeeeee;border-radius:3px;outline:0;direction:rtl;resize:none;color:#989898;margin-top:20px}
+        .form-group textarea{display:block;margin:25px auto;width:100%;text-align:right;height:150px;font-size:14px;-webkit-transition:all .6s ease;-o-transition:all .6s ease;transition:all .6s ease;border:1px solid #eeeeee;border-radius:3px;outline:0;direction:rtl;resize:none;color:#989898}
+        .form-group input.inputt:invalid,.form-group textarea:invalid{border:1px solid #ddd;-webkit-box-shadow:0 1px 1px #ddd;box-shadow:0 1px 1px #ddd}
+        .form-group input.inputt{border:2px solid #ddd}
+        .form-group input.inputt:not([readonly]):focus,.form-group input.inputt:valid,.form-group textarea:not([readonly]):focus,.form-group textarea:valid{border:1px solid #6935FD;-webkit-box-shadow:0 0 1px #6935FD;box-shadow:0 0 1px #6935FD}
+        .form-group label{color:#666;pointer-events:none;position:absolute;right:20px;transition:.2s ease-in-out;padding:2px 5px}
+        .form-group input.inputt:invalid + label,.form-group textarea:invalid + label{top:15px;font-size:14px}
+        .form-group input.inputt:focus + label,.form-group input.inputt:valid + label,.form-group input.inputt[readonly] + label,.form-group textarea:focus + label,.form-group textarea:valid + label,.form-group textarea[readonly] + label{top:-17px;font-size:12px;background:#fff;color:#6935FD}
+        .form-group input.inputt:invalid + label svg,.form-group textarea:invalid + label svg{fill:#666}
+        .form-group input.inputt:focus + label svg,.form-group input.inputt:valid + label svg,.form-group input.inputt[readonly] + label svg,.form-group textarea:focus + label svg,.form-group textarea:valid + label svg{fill:#6935FD;width:18px;height:18px}
+        .form-group input.inputt:not([readonly]):focus,.form-group textarea:not([readonly]):focus{-webkit-box-shadow:0 0 0 0.25rem rgb(61 90 254 / 32%);box-shadow:0 0 0 0.25rem rgb(61 90 254 / 32%)}
+        button.btnn{font-family:'flat-jooza',Arial,Tahoma,Helvetica;margin:9px 0;width:100%;border:none;background:#6935FD;-webkit-box-shadow:0 2px 2px 0 rgb(0 0 0 / 14%),0 1px 5px 0 rgb(0 0 0 / 12%),0 3px 1px -2px rgb(0 0 0 / 20%);box-shadow:0 2px 2px 0 rgb(0 0 0 / 14%),0 1px 5px 0 rgb(0 0 0 / 12%),0 3px 1px -2px rgb(0 0 0 / 20%);min-width:46px;padding:8px 24px;font-size:13px;text-decoration:none;line-height:normal;border-radius:2px;color:white;cursor:pointer}
+        .continer h2 i {
+            text-align: center;
+            float: left;
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            color: #6935fd;
+            border-radius: 5px;
+            background: #fff;
+            font-size: 17px;
+            padding: 4px;
+        }
+        .continer p {
+            background: #eee;
+            color: #111;
+            padding:15px 10px;
+            border-radius: 3px;
+            font-size: 15px;
+        }
+        footer {
+            background-color: #fff;
+            box-shadow: 0 2px 2px rgb(0 21 64 / 10%), 0 10px 10px rgb(0 21 64 / 5%);
+            display: block;
+            text-align: center;
+            padding: 20px 0;
+            color: #A8A8A8;
+            font-size: 14px;
+        }
+        ::-webkit-scrollbar{width:6px;height:7px;background:#f5f5f5;border-radius:3px;}
+        ::-webkit-scrollbar-thumb{background:#6935fd;border-radius:3px;}
+
+            </style>
+</head>
+<body>
+  <div class="continer">
+    <div class="header">
+        <h2 class="title"><b>استمارة التقديم لكورس</b><i class="fa fa-file-pen"></i></h2>
+        <p class="describ">كورس التقديم لكورس ميتا برو لتعلم اساسيات البرمجه والدخول الى عالم برمجة مواقع الويب</p>
+    </div>
+  </div>
+    <div class='continer'>
+        <h2><b>استمارة التقديم</b><i class="fa fa-list-check"></i></h2>
+        <p>اذا كنت تريد الانضمام الى كورس ميتا برو يمكنك كتابة البيانات التالية :</p>
+        <form action='javascript:sginup();' id='contact-form'>
+            <div class='form-group'>
+                <input class='inputt' id='contact-form-name' required='required' type='text'/>
+                <label class='lable-txt-input'>
+                    <svg fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z'/>
+                    </svg>  اسم الكريم  </label>
+                </div>
+                <div class='form-group'>
+                    <input class='inputt' id='contact-form-phone' name='phone' required='required' type='tel'/>
+                    <label class='lable-txt-input'>
+                        <svg class='svg-icon' viewBox='0 0 20 20'>
+                            <path d='M13.372,1.781H6.628c-0.696,0-1.265,0.569-1.265,1.265v13.91c0,0.695,0.569,1.265,1.265,1.265h6.744c0.695,0,1.265-0.569,1.265-1.265V3.045C14.637,2.35,14.067,1.781,13.372,1.781 M13.794,16.955c0,0.228-0.194,0.421-0.422,0.421H6.628c-0.228,0-0.421-0.193-0.421-0.421v-0.843h7.587V16.955z M13.794,15.269H6.207V4.731h7.587V15.269z M13.794,3.888H6.207V3.045c0-0.228,0.194-0.421,0.421-0.421h6.744c0.228,0,0.422,0.194,0.422,0.421V3.888z'/>
+                        </svg>  رقم الهاتف </label>
+                    </div>
+                    <div class='form-group'>
+                        <input class='inputt' id='contact-form-email' required='required' type='text'/>
+                        <label class='lable-txt-input'>
+                            <svg fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+                                <path d='M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z'/>
+                            </svg>  البريد الالكتروني </label>
+                        </div>
+                <div class='form-group'>
+                    <textarea class='inputt' id='contact-form-msg' required></textarea>
+                    <label class='lable-txt-input'>
+                        <svg fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+                            <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>
+                            <path d='m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z'/>
+                        </svg>  الرسالة </label>
+            </div>
+                <button class='btnn' type='submit'>إرسال</button>
+        </form> 
+    </div>                         
+    <footer>
+    <div class='copyright'>Ahmed El-Sayed &#169; 2023</div></footer>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+<script>
+var getFlatJooza=document.createElement("link");getFlatJooza.rel="stylesheet",getFlatJooza.type="text/css",getFlatJooza.href="https://www.fontstatic.com/f=flat-jooza",document.querySelector("body").appendChild(getFlatJooza);
+function sginup() {
+  var a = document.getElementById("contact-form-name").value;
+  var t = document.getElementById("contact-form-phone").value;
+  var p = document.getElementById("contact-form-email").value;
+  var e = document.getElementById("contact-form-msg").value;
+  o = '%0Aالاســـــــــم : <pre>' + a + '</pre>%0A رقم الهاتف<pre>' + t + '</pre>%0Aالبريد الالكتروني:<pre>' + p +'</pre>%0Aالرساله :<pre>' + e + '</pre>';
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://api.telegram.org/bot5991463182:AAH1BRMm-RWCuB0hUxER_KOqVJBWdqoGLkQ/sendMessage?text=" + o + "&chat_id=-1001589590856&parse_mode=html");
+  xhr.send();
+  window.location.href='https://api.whatsapp.com/send?phone=%2B201032726937'
+}
+</script> 
+</body>
+</html>
